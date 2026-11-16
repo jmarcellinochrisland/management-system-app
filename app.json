@@ -1,0 +1,60 @@
+{
+  "expo": {
+    "name": "ManagementSystemApp",
+    "slug": "ManagementSystemApp",
+    "version": "1.0.1",
+    "orientation": "portrait",
+    "scheme": "managementsystemapp",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE"
+      },
+      "predictiveBackGestureEnabled": false,
+      "package": "com.marcellino99.ManagementSystemApp"
+    },
+    "web": {
+      "output": "static"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-dev-client",
+      [
+        "expo-calendar",
+        {
+          "calendarPermission": "Aplikasi membutuhkan akses kalender untuk menampilkan dan membuat jadwal."
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "color": "#075E54"
+        }
+      ],
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#208AEF"
+        }
+      ],
+      "expo-sharing"
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    },
+    "extra": {
+      "router": {
+        "asyncRoutes": {
+          "web": true
+        }
+      },
+      "eas": {
+        "projectId": "dc489aa6-85f1-4398-aade-25765e6e3c77"
+      }
+    }
+  }
+}
